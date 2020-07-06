@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ul {
+  list-style-type: none;
+  margin: 1000;
+  padding: 0;
+  overflow: hidden;
+  background-color: Gray;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #111
+ 
+;
+}
+
+h2 { background-color: #808080;
+  color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+}
+</style>
+</head>
+<body> 
+<img src="data:image/jpeg;base64,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.jpg />"
+
+<div class="content">
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="#about">About us</a></li>
+</ul>
+  <h2 >About us</h2>
+  <p>seek to put a footprint in the field of human resources development for all parties, companies, bodies and individuals in accordance with specific training plans, and through the application Community Service College offers a distinct training service combining the needs of the labor market with all that is new in the field of training programs and conferences Globalism</p>
+
+</div>
+<ul>
+ 
+</body>
+</html>
